@@ -15,7 +15,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y git zip unzip openjdk-17-jdk python3-pip autoconf libtool pkg-config zlib1g-dev libncurses5-dev libncursesw5-dev libtinfo6 cmake libffi-dev libssl-dev automake autopoint gettext
-          python3 -m pip install --user --upgrade pip setuptools wheel Cython==0.29.36 buildozer
+          python3 -m pip install --user --upgrade pip setuptools wheel Cython==0.29.36 buildozer==1.5.0
       - name: Build debug APK
         env:
           BUILDOZER_WARN_ON_ROOT: "0"
